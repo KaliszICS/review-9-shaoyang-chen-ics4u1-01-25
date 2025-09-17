@@ -3,7 +3,21 @@ public class PracticeProblem {
 	public static void main(String args[]) {
 
 	}
-	public static int countLetter(String str,char ch){
+	public static int lettersToFive(String s,char ch){
+        int count = 0;
+        int index = 0;
+        int length = s.length();
+        while (index < length){
+            if (s.charAt(index) == ch){
+                count++;
+                if (count == 5){
+                    return index+1;
+                }
+            }
+        }
+        return -1;
+    }
+    public static int countLetter(String str,char ch){
         int count = 0;
         for(int i=0;i<str.length();i++){
             if(str.charAt(i)==ch){
