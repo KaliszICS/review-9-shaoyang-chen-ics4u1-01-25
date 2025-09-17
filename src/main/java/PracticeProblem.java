@@ -3,5 +3,29 @@ public class PracticeProblem {
 	public static void main(String args[]) {
 
 	}
-
+	public static int countLetter(String str,char ch){
+        int count = 0;
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)==ch){
+                count++;
+            }
+        }
+        return count;
+    }
+    public static int oddSum(int a,int b){
+        int sum = 0;
+        int temp = b;
+        if (a > b){
+            b = a;
+            a = temp;
+        }
+        if (a % 2 == 0){
+            a++;
+        }
+        while (a <= b){
+            sum += a;
+            a += 2;
+        }
+        return sum;
+    }
 }
