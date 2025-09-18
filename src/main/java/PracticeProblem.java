@@ -14,6 +14,7 @@ public class PracticeProblem {
                     return index+1;
                 }
             }
+			index++;
         }
         return -1;
     }
